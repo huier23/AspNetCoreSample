@@ -17,7 +17,7 @@
 !**\obj\**
 ```
 #### HelloWorldNuGet
-<image src="https://github.com/huier23/AspNetCoreSample/blob/master/png/CI-HelloWorldNuGet.png?raw=true" width="70%" height="70%"><br/>
+<image src="https://github.com/huier23/AspNetCoreSample/blob/master/png/CI-HelloWorldNuGet.png?raw=true" width="50%" height="50%"><br/>
 
 Setting Pack Option <br/>
 <image src="https://github.com/huier23/AspNetCoreSample/blob/master/png/CI-HelloWorldNuGet2.png?raw=true" width="100%" height="100%"><br/>
@@ -25,9 +25,9 @@ Setting Pack Option <br/>
 ## Azure Pipelines Release
 #### AspNetCore.Sample
 Dev <br/>
-<image src="https://github.com/huier23/AspNetCoreSample/blob/master/png/CD.Dev-AspNetCore.Sample.png?raw=true" width="70%" height="70%"><br/>
+<image src="https://github.com/huier23/AspNetCoreSample/blob/master/png/CD.Dev-AspNetCore.Sample.png?raw=true" width="50%" height="50%"><br/>
 Production <br/>
-<image src="https://github.com/huier23/AspNetCoreSample/blob/master/png/CD.Production-AspNetCore.Sample.png?raw=true" width="70%" height="70%"><br/>
+<image src="https://github.com/huier23/AspNetCoreSample/blob/master/png/CD.Production-AspNetCore.Sample.png?raw=true" width="50%" height="50%"><br/>
 
 
 #### HelloWorldNuGet
