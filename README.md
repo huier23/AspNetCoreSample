@@ -4,6 +4,7 @@
 * **Sample Code (ASP .NET Core)** https://github.com/huier23/AspNetCoreSample.git
 * **HelloWorld.Lib** https://github.com/huier23/HelloWorld.Lib.git
 * **Register free Azure account** https://azure.microsoft.com/zh-tw/free/
+* **Repo backup** https://huier-teamservice@dev.azure.com/huier-teamservice/OpenRepository/_git/OpenRepository
 
 
 ## Azure Pipelines Build 
