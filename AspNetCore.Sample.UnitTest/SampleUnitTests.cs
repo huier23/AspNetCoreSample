@@ -12,7 +12,7 @@ namespace aspnet_core_dotnet_core.UnitTests
         {
             var controller = new HomeController();
             IActionResult result = controller.Index();
-            Assert.AreEqual(null, controller.ViewData["Message"]);
+            Assert.AreEqual("DevOps Workshop", controller.ViewData["Message"]);
         }
 
         [TestMethod]

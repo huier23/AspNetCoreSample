@@ -2,6 +2,8 @@
     ViewData["Title"] = "Home Page";
 }
 
+
+
 <div class="main-container">
     <div class="cloud-image">
         <img src="~/images/successCloudNew.svg" />
@@ -13,7 +15,7 @@
             </a>
         </div>
         <div class="content-body">
-            <div class="success-text">Success!</div>
+            <div class="success-text">@ViewData["Message"]</div>
             <div class="description line-1"> Azure DevOps Project has been successfully setup</div>
             <div class="description line-2"> Your ASP.NET CORE app is up and running on Azure</div>
         </div>

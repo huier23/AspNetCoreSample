@@ -10,6 +10,8 @@ namespace AspNetCore.Sample.Web.Controllers
     {
         public IActionResult Index()
         {
+            ViewData["Message"] = "Success!";
+
             return View();
         }
 
