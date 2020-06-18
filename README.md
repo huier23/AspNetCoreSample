@@ -6,6 +6,22 @@
 * **Register free Azure account** https://azure.microsoft.com/zh-tw/free/
 * **Repo backup** https://huier-teamservice@dev.azure.com/huier-teamservice/OpenRepository/_git/OpenRepository
 
+### Update
+### 2020/06 
+- update to .NET Core 3.1
+- When fisrt time to build and do unit test of this project, you can find the one error issue of unit test result.
+- Controllers / HomeController.cs
+    ```
+        public class HomeController : Controller
+        {
+            public IActionResult Index()
+            {
+                ViewData["Message"] = "Success!";
+
+                return View();
+            }
+    ```
+    "Success!" > "DevOps Workshop"
 
 ## Azure Pipelines Build 
 ### AspNetCore.Sample
