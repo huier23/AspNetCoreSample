@@ -1,16 +1,16 @@
+<img src="https://github.com/huier23/AspNetCoreSample/blob/master/mtc_icon.jpg?raw=true" align="right" />
 
 # DevOps Workshop Sample Code
 ## Link
-* **Azure DevOps** https://dev.azure.com/
-* **Azure Portal** https://portal.azure.com
-* **Sample Code (ASP .NET Core)** https://github.com/huier23/AspNetCoreSample.git
-* **HelloWorld.Lib** https://github.com/huier23/HelloWorld.Lib.git
-* **Register free Azure account** https://azure.microsoft.com/zh-tw/free/
-* **Repo backup** https://huier-teamservice@dev.azure.com/huier-teamservice/OpenRepository/_git/OpenRepository
+* [Azure DevOps](https://dev.azure.com/)
+* [Azure Portal](https://portal.azure.com)
+* [Sample Code (ASP .NET Core)](https://github.com/huier23/AspNetCoreSample.git)
+* [HelloWorld.Lib](https://github.com/huier23/HelloWorld.Lib.git) 
+* [Register free Azure account](https://azure.microsoft.com/zh-tw/free/)
 
 ## Update
-### 2020/06 
-- update to .NET Core 3.1
+### 2020/06
+- update to .NET Core 3.1 (Visual Studio 2019 required)
 - When fisrt time to build and do unit test of this project, you can find the one error issue of unit test result.
 - Controllers / HomeController.cs
     ```
