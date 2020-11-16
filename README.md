@@ -1,6 +1,7 @@
 <img src="https://github.com/huier23/AspNetCoreSample/blob/master/mtc_icon.jpg?raw=true" align="right" />
 
 # DevOps Workshop Sample Code
+> Matrial for Azure DevOps and Github action to enable your technology skill
 ## Link
 * [Azure DevOps](https://dev.azure.com/)
 * [Azure Portal](https://portal.azure.com)
