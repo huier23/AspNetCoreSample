@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
-  BuildAndTest:
+  build-and-test:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -20,10 +20,13 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test --no-restore --verbosity normal --results-directory xunit-test-result.xml
+    - name: Show roots files
+      if: always()
+      run: ls
     - name: Publish Unit Test Results
       uses: EnricoMi/publish-unit-test-result-action@v1.5
       if: always()
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        files: test-results/**/*.xml
+        files: xunit-test-result.xml
