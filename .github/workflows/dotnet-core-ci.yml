@@ -8,9 +8,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET Core
@@ -21,19 +19,18 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
+
+  test:
+    runs-on: ubuntu-latest
+    env:
+      RESULTS_PATH: alternate-location
+    
+    steps:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - name: XUnit Viewer
-      uses: AutoModality/action-xunit-viewer@v1.0.1
+    - name: Publish Unit Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v1.5
       if: always()
       with:
-        results: ${{ env.RESULTS_PATH }}
-    - name: The generated report
-      run: echo "The report is ${{ steps.xunit-viewer.outputs.report-file }}" 
-      if: always()   
-    - name: Attach the report
-      uses: actions/upload-artifact@v1
-      if: always()
-      with:
-        name: alternate-results-path-reports
-        path: ${{ env.RESULTS_PATH }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        files: test-results/**/*.xml
