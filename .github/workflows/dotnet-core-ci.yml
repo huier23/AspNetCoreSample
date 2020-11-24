@@ -23,16 +23,17 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-
-
     - name: XUnit Viewer
       uses: AutoModality/action-xunit-viewer@v1.0.1
+      if: always()
       with:
         results: ${{ env.RESULTS_PATH }}
     - name: The generated report
-      run: echo "The report is ${{ steps.xunit-viewer.outputs.report-file }}"    
+      run: echo "The report is ${{ steps.xunit-viewer.outputs.report-file }}" 
+      if: always()   
     - name: Attach the report
       uses: actions/upload-artifact@v1
+      if: always()
       with:
         name: alternate-results-path-reports
         path: ${{ env.RESULTS_PATH }}
