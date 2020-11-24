@@ -8,7 +8,7 @@ on:
 
 jobs:
   runs-on: ubuntu-latest
-  Build:
+  Build and Test:
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET Core
@@ -19,10 +19,6 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
-
-  UnitTest:
-    needs: Build
-    steps:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
     - name: Publish Unit Test Results
