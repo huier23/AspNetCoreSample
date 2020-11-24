@@ -20,7 +20,7 @@ jobs:
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-restore --verbosity normal --results-directory xunit-test-result.xml
+      run: dotnet test --no-restore --verbosity normal
     - name: Show roots files
       if: always()
       run: ls
@@ -29,4 +29,4 @@ jobs:
       if: always()
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        files: ./xunit-test-result.xml
+        files: TestResults/*.xml
